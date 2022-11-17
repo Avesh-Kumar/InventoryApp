@@ -1,0 +1,26 @@
+<%- include('partials/head')%>
+    <div class="nav-container">
+        <a href="/">Back</a>
+    </div>
+    <form action="/category/create" method="POST" class="new-category-form">
+        <h2>New Category</h2>
+        <fieldset class="info-fields">
+            <label for="Name" >
+                Name:
+                <textarea type="text" name="name" id="" cols="40" rows="3" required></textarea>
+            </label>
+            <label for="Description">
+                Description:
+                <textarea name="description" id="" cols="40" rows="3" required></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="submit">
+                <input type="submit" class="submit-button">
+                
+            </label>  
+        </fieldset>
+    </form>
+  </body>
+</html>
+
